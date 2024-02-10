@@ -109,7 +109,6 @@
             easily modified with no need for any custom CSS!
         </div>
     </div>
-
 </div>
 
 <div class="col-lg-6">
@@ -158,6 +157,5 @@
             </div>
         </div>
     </div>
-
 </div>
 @endsection

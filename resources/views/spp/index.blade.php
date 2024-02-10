@@ -72,7 +72,7 @@
                   <tr>
                     <td>Data Masih Kosong</td>
                   </tr>
-        @endforelse
+                  @endforelse
                 </tbody>
             </table>
         </div>

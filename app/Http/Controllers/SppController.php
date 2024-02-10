@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+
 class SppController extends Controller
 {
     /**
@@ -14,7 +15,7 @@ class SppController extends Controller
         //
         $keyword = $request->keyword;
 
-        $spps =DB::table("spps")->where('tahun','LIKE','%'.$keyword.'%')->get();
+        $spp = DB::table("spps")->where('tahun','LIKE','%'.$keyword.'%')->get();
         return view("spp.index", compact("spps"));
     }
 
@@ -34,8 +35,8 @@ class SppController extends Controller
     {
         //
         $request->validate([
-            'tahun' => "required|min:4",
-            'nominal' => "required",
+            'tahun'=>"required|min:4",
+            'nominal'=>"required",
            ]);
 
            $query = DB::table("spps")->insert([
@@ -70,8 +71,8 @@ class SppController extends Controller
     {
         //
         $request->validate([
-            'tahun' => "required|min:4",
-            'nominal' => "required",
+            'tahun'=>"required|min:4",
+            'nominal'=>"required",
            ]);
 
            $query = DB::table("spps")
